@@ -36,4 +36,6 @@ class Dog:
 # Making an instance from a Class
 my_dog = Dog('Wilie', 6)
 
-print(f"My dog's name is {my_dog.name}".)
+print(f"My dog's name is {my_dog.name}.")
+
+print(my_dog)
