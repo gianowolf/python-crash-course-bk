@@ -33,4 +33,81 @@ print(alien_0)
 # As a optional second argument, you can pass the value to be returned if the key does not exist
 print(alien_0.get('age','no age assigned'))
 
+# Looping through a dictionary
+user_0 = {
+    'username': 'efermi',
+    'first': 'enrico',
+    'last': 'fermi'
+}
 
+for key,value in user_0.items():
+    print(f"Key: {key}")
+    print(f"Value: {value}")
+    
+print()
+print()
+
+# Looping through all the keys
+fav_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'phil': 'ruby',
+    'monica': 'python',
+    'carlos': 'c'
+}
+
+for name in fav_languages.keys():
+    print(name.title())
+print()
+for language in fav_languages.values():
+    print(language.title())
+print()
+
+# the set() function builds a set for unique languages in the list
+print("The following languages have been mentioned:")
+for language in set(fav_languages.values()):
+    print(f"\t{language}")
+    
+print()
+# Looping in order
+for name in sorted(fav_languages.keys()):
+    print(f"{name.title()}, Thank you for takign the poll.")
+
+print()
+print()
+
+# Nesting: multiple dictioneries in a list
+print("Nesting")
+# Make an empty list for storing aliens
+aliens = []
+
+# Make 30 green aliens
+for alien_number in range(30):
+    new_alien = {'color':'green', 'points':5, 'speed':'slow'}
+    aliens.append(new_alien)
+# change aliens characteristics 
+for alien in aliens[:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+
+for alien in aliens[:6]:
+    print(alien)
+print()
+print()
+
+######################### 
+# A list in a dictionary 
+######################### 
+
+pizza = {
+    'crust': 'thick',
+    'toppings': ['mushrooms', 'extra cheese']
+}
+
+print(f"You ordered a {pizza['crust']}-crust pizza" 
+      "with the following toppings:")
+for topping in pizza['toppings']:
+    print("\t"+topping)
+print()
