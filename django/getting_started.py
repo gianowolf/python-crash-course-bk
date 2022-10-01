@@ -8,9 +8,19 @@
 # The learning Log home will describe the site and invite users to Log In or Log Up 
 # Once logged, a user can create new topics, add new entries and read and edit existing entries
 #####################
+# Setting Up a Project
+# 
+# # # Create Virtual Env
+# # # # # # create and enter in a new directory (singular)
+# # # # # # python -m venv name_env
+# # # # # # source name_env/bin/activate
 
-# Creating Virtual Environment 
-# $ python3 -m venv ll_env
+#####################
+# Installing Django 
+# pip install django
+#####################
+# Starting Virtual Env
+# source ll_env/bin/activate
 
 # Creating Database
 # $ python manage.py migrate 
@@ -18,3 +28,8 @@
 
 # Activating the project
 # source ll_env/bin/activate
+
+###########
+
+# Setting a Superuser
+
